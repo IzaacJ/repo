@@ -7,21 +7,47 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" href="depictions/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <style>
+	  body {
+		  text-align: center;
+	  }
+	  h1.repo-title {
+		  text-align: center;
+	  }
+	  img.repo-icon {
+		  max-width: 75%;
+		  height: auto;
+		  max-height: 250px;
+		  margin-left: auto;
+		  margin-right: auto;
+		  display: block;
+	  }
+	  img.pm-icon {
+		  width: 50px;
+		  height: 50px;
+		  padding: 5px;
+		  border-radius: 15px !important;
+	  }
+  </style>
 </head>
 <body>
 
 <div class="container">
-	<h1><img src="IzaacJ.png"> IzaacJ's Repository</h1>
+	<img class="repo-icon" src="IzaacJ.png">
+	<h1 class="repo-title">IzaacJ's Repository</h1>
 </div>
 
 <div class="container">
 	<div class="card">
 		<div class="card-body">
 			<p><span class="text-primary"><b>IzaacJ's</span></b> Repository.</p>
-			<a class="btn btn-sm btn-primary" href="sileo://source/https://izaacj.github.io/repo/">Add to Sileo (Recommended)</a>
-			<a class="btn btn-sm btn-default" href="installer://add/repo=https://izaacj.github.io/repo/">Add to Installer</a>
-			<a class="btn btn-sm btn-default" href="zbra://sources/add/https://izaacj.github.io/repo/">Add to Zebra</a>
-			<a class="btn btn-sm btn-default" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://izaacj.github.io/repo/">Add to Cydia</a>
+			<p>
+				<span class="text-secondary"><b>Add repo to:</b></span><br>
+				<a class="btn btn-sm btn-primary" href="sileo://source/https://izaacj.github.io/repo/"><img class="pm-icon" src="sileo.png" alt="Sileo (Recommended)"/></a>
+				<a class="btn btn-sm btn-secondary" href="installer://add/repo=https://izaacj.github.io/repo/"><img class="pm-icon" src="installer.jpg" alt="Installer"/></a>
+				<a class="btn btn-sm btn-secondary" href="zbra://sources/add/https://izaacj.github.io/repo/"><img class="pm-icon" src="zebra.png" alt="Zebra"/></a>
+				<a class="btn btn-sm btn-secondary" href="cydia://url/https://cydia.saurik.com/api/share#?source=https://izaacj.github.io/repo/"><img class="pm-icon" src="cydia.png" alt="Cydia (NOT recommended)"/></a>
+			</p>
 		</div>
 	</div>
 </div>
